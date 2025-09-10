@@ -190,7 +190,7 @@ export default function Portfolio() {
                   <div className='flex gap-2 flex-wrap'>
                     <Badge variant='secondary'>Backend</Badge>
                     <Badge variant='secondary'>API</Badge>
-                    <Badge variant='secondary'>Golang</Badge>
+                    <Badge variant='secondary'>Node JS</Badge>
                   </div>
                   <div className='flex gap-2'>
                     <Button variant='ghost' size='sm' asChild>
@@ -202,6 +202,40 @@ export default function Portfolio() {
                         <ExternalLink className='w-4 h-4' />
                       </a>
                     </Button>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className='group hover:shadow-lg transition-shadow'>
+              <CardHeader>
+                <div className='bg-white rounded-md mb-4 p-4 flex items-center justify-center h-32'>
+                  <Image
+                    src='https://dashboard.jabarprov.go.id/assets/images/logo-dark.svg'
+                    alt='Executive Jabar AI Logo'
+                    width={120}
+                    height={60}
+                    className='object-contain'
+                  />
+                </div>
+                <CardTitle>Executive Jabar AI</CardTitle>
+                <CardDescription>
+                  Private AI-powered executive assistant system for West Java
+                  Province leadership with real-time chat capabilities.
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className='flex justify-between items-center'>
+                  <div className='flex gap-2 flex-wrap'>
+                    <Badge variant='secondary'>Backend</Badge>
+                    <Badge variant='secondary'>SSE</Badge>
+                    <Badge variant='secondary'>Python</Badge>
+                    <Badge variant='secondary'>Chat</Badge>
+                  </div>
+                  <div className='flex gap-2'>
+                    <span className='text-sm text-slate-500 italic'>
+                      Private
+                    </span>
                   </div>
                 </div>
               </CardContent>
