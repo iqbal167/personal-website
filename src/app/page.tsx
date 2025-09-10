@@ -218,7 +218,7 @@ export default function Portfolio() {
                     className='object-contain'
                   />
                 </div>
-                <CardTitle>Executive Jabar AI (Private</CardTitle>
+                <CardTitle>Executive Jabar AI (Private)</CardTitle>
                 <CardDescription>
                   Private AI-powered executive assistant system for West Java
                   Province leadership with real-time chat capabilities.
