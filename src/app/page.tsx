@@ -170,8 +170,14 @@ export default function Portfolio() {
 
             <Card className='group hover:shadow-lg transition-shadow'>
               <CardHeader>
-                <div className='bg-gradient-to-br from-green-500 to-blue-600 h-32 rounded-md mb-4 flex items-center justify-center'>
-                  <span className='text-white font-bold text-xl'>Hotline</span>
+                <div className='bg-white rounded-md mb-4 p-4 flex items-center justify-center h-32'>
+                  <Image
+                    src='https://play-lh.googleusercontent.com/kYK9nKxCm4vlNPUh8t1nGRECx9c3-aCZPHTrcbud1PEGw-QExUQxyXz0YtUBDfAydII=w480-h960-rw'
+                    alt='Hotline Jawa Barat Logo'
+                    width={120}
+                    height={60}
+                    className='object-contain'
+                  />
                 </div>
                 <CardTitle>Hotline Jawa Barat</CardTitle>
                 <CardDescription>
