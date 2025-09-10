@@ -189,13 +189,13 @@ export default function Portfolio() {
                 <div className='flex justify-between items-center'>
                   <div className='flex gap-2 flex-wrap'>
                     <Badge variant='secondary'>Backend</Badge>
-                    <Badge variant='secondary'>API</Badge>
+                    <Badge variant='secondary'>System</Badge>
                     <Badge variant='secondary'>Node JS</Badge>
                   </div>
                   <div className='flex gap-2'>
                     <Button variant='ghost' size='sm' asChild>
                       <a
-                        href='https://hotline.jabarprov.go.id/'
+                        href='wa.me/6282126030038'
                         target='_blank'
                         rel='noopener noreferrer'
                       >
@@ -218,7 +218,7 @@ export default function Portfolio() {
                     className='object-contain'
                   />
                 </div>
-                <CardTitle>Executive Jabar AI</CardTitle>
+                <CardTitle>Executive Jabar AI (Private</CardTitle>
                 <CardDescription>
                   Private AI-powered executive assistant system for West Java
                   Province leadership with real-time chat capabilities.
@@ -230,7 +230,6 @@ export default function Portfolio() {
                     <Badge variant='secondary'>Backend</Badge>
                     <Badge variant='secondary'>SSE</Badge>
                     <Badge variant='secondary'>Python</Badge>
-                    <Badge variant='secondary'>Chat</Badge>
                   </div>
                   <div className='flex gap-2'>
                     <span className='text-sm text-slate-500 italic'>
