@@ -17,7 +17,7 @@ export default function Portfolio() {
             </Button>
             <Button variant='outline' size='sm' asChild>
               <a
-                href='/assets/resume.pdf'
+                href='/personal-website/assets/resume.pdf'
                 download='Muhammad_Iqbal_Ali_Resume.pdf'
                 target='_blank'
                 rel='noopener noreferrer'
@@ -101,7 +101,7 @@ export default function Portfolio() {
                 </div>
                 <div className='relative'>
                   <Image
-                    src='/assets/photo.jpg'
+                    src='/personal-website/assets/photo.jpg'
                     alt='Muhammad Iqbal Ali'
                     width={240}
                     height={320}
