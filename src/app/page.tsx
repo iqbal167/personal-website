@@ -23,7 +23,7 @@ export default function Portfolio() {
                 rel='noopener noreferrer'
               >
                 <Download className='w-4 h-4 mr-2' />
-                Preview PDF
+                View Resume
               </a>
             </Button>
           </div>
