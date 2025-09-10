@@ -3,6 +3,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Download, Github, Linkedin } from 'lucide-react';
 import Image from 'next/image';
+import { getAssetPath } from '@/lib/utils';
 
 export default function Portfolio() {
   return (
@@ -17,7 +18,7 @@ export default function Portfolio() {
             </Button>
             <Button variant='outline' size='sm' asChild>
               <a
-                href='/personal-website/assets/resume.pdf'
+                href={getAssetPath('/assets/resume.pdf')}
                 download='Muhammad_Iqbal_Ali_Resume.pdf'
                 target='_blank'
                 rel='noopener noreferrer'
@@ -101,7 +102,7 @@ export default function Portfolio() {
                 </div>
                 <div className='relative'>
                   <Image
-                    src='/personal-website/assets/photo.jpg'
+                    src={getAssetPath('/assets/photo.jpg')}
                     alt='Muhammad Iqbal Ali'
                     width={240}
                     height={320}
