@@ -211,14 +211,14 @@ export default function Portfolio() {
               <CardHeader>
                 <div className='bg-white rounded-md mb-4 p-4 flex items-center justify-center h-32'>
                   <Image
-                    src='https://dashboard.jabarprov.go.id/assets/images/logo-dark.svg'
+                    src='https://i0.wp.com/digitalservice.jabarprov.go.id/wp-content/uploads/2019/11/logo_jds-3.png?resize=500%2C206'
                     alt='Executive Jabar AI Logo'
-                    width={80}
-                    height={40}
+                    width={120}
+                    height={60}
                     className='object-contain'
                   />
                 </div>
-                <CardTitle>Executive Jabar AI (Private)</CardTitle>
+                <CardTitle>Executive Jabar AI</CardTitle>
                 <CardDescription>
                   Private AI-powered executive assistant system for West Java
                   Province leadership with real-time chat capabilities.
