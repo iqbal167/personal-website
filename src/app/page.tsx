@@ -1,102 +1,165 @@
+import { Button } from '@/components/ui/button';
+import { Card, CardContent } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
+import { Download, Github, Linkedin } from 'lucide-react';
 import Image from 'next/image';
 
-export default function Home() {
+export default function Portfolio() {
   return (
-    <div className='font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20'>
-      <main className='flex flex-col gap-[32px] row-start-2 items-center sm:items-start'>
-        <Image
-          className='dark:invert'
-          src='/next.svg'
-          alt='Next.js logo'
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className='font-mono list-inside list-decimal text-sm/6 text-center sm:text-left'>
-          <li className='mb-2 tracking-[-.01em]'>
-            Get started by editing{' '}
-            <code className='bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded'>
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className='tracking-[-.01em]'>
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <div className='min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800'>
+      {/* Header */}
+      <header className='container mx-auto px-6 py-8'>
+        <nav className='flex justify-between items-center'>
+          <h1 className='text-2xl font-bold'>Portfolio</h1>
+          <div className='flex gap-4'>
+            <Button variant='ghost' size='sm' asChild>
+              <a href='#about'>About</a>
+            </Button>
+            <Button variant='outline' size='sm' asChild>
+              <a
+                href='/assets/resume.pdf'
+                download='Muhammad_Iqbal_Ali_Resume.pdf'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <Download className='w-4 h-4 mr-2' />
+                Download Resume
+              </a>
+            </Button>
+          </div>
+        </nav>
+      </header>
 
-        <div className='flex gap-4 items-center flex-col sm:flex-row'>
-          <a
-            className='rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto'
-            href='https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            <Image
-              className='dark:invert'
-              src='/vercel.svg'
-              alt='Vercel logomark'
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className='rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]'
-            href='https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            Read our docs
-          </a>
+      {/* Hero Section */}
+      <section className='container mx-auto px-6 py-16 text-center'>
+        <div className='max-w-3xl mx-auto'>
+          <h2 className='text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent'>
+            Hi, I&apos;m Muhammad Iqbal Ali
+          </h2>
+          <p className='text-xl text-slate-600 dark:text-slate-300 mb-8'>
+            Backend-focused Software Engineer passionate about building
+            cloud-native, resilient, and observable distributed systems.
+          </p>
+          <div className='flex justify-center gap-4'>
+            <Button variant='ghost' size='sm' asChild>
+              <a
+                href='https://github.com/iqbal167'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <Github className='w-5 h-5' />
+              </a>
+            </Button>
+            <Button variant='ghost' size='sm' asChild>
+              <a
+                href='https://linkedin.com/in/muhammad-iqbal-ali-0141b81b9'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <Linkedin className='w-5 h-5' />
+              </a>
+            </Button>
+          </div>
         </div>
-      </main>
-      <footer className='row-start-3 flex gap-[24px] flex-wrap items-center justify-center'>
-        <a
-          className='flex items-center gap-2 hover:underline hover:underline-offset-4'
-          href='https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          <Image
-            aria-hidden
-            src='/file.svg'
-            alt='File icon'
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className='flex items-center gap-2 hover:underline hover:underline-offset-4'
-          href='https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          <Image
-            aria-hidden
-            src='/window.svg'
-            alt='Window icon'
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className='flex items-center gap-2 hover:underline hover:underline-offset-4'
-          href='https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          <Image
-            aria-hidden
-            src='/globe.svg'
-            alt='Globe icon'
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+      </section>
+
+      {/* About Section */}
+      <section id='about' className='container mx-auto px-6 py-8'>
+        <div className='max-w-4xl mx-auto'>
+          <h3 className='text-3xl font-bold mb-8 text-center'>About Me</h3>
+          <Card>
+            <CardContent className='p-8'>
+              <div className='grid md:grid-cols-2 gap-8 items-center'>
+                <div>
+                  <p className='text-slate-600 dark:text-slate-300 mb-4'>
+                    I&apos;m a Backend-focused Software Engineer passionate
+                    about building cloud-native, resilient, and observable
+                    distributed systems. I specialize in Golang, and bring
+                    additional experience with Node.js and Python.
+                  </p>
+                  <p className='text-slate-600 dark:text-slate-300 mb-4'>
+                    I&apos;m well-versed in containerized deployments using
+                    Docker, and leverage observability tools like OpenTelemetry,
+                    Grafana, and Prometheus to maintain system reliability.
+                  </p>
+                  <p className='text-slate-600 dark:text-slate-300 mb-6'>
+                    I care deeply about interoperable systems, clean
+                    architecture, and bringing clarity to complex backend
+                    challenges. Always learning, always improving — and always
+                    looking to build meaningful technology that scales.
+                  </p>
+                  <div className='flex flex-wrap gap-2'>
+                    <Badge>Golang</Badge>
+                    <Badge>Node.js</Badge>
+                    <Badge>Python</Badge>
+                    <Badge>Docker</Badge>
+                    <Badge>OpenTelemetry</Badge>
+                    <Badge>Grafana</Badge>
+                    <Badge>Prometheus</Badge>
+                    <Badge>Cloud-Native</Badge>
+                  </div>
+                </div>
+                <div className='relative'>
+                  <Image
+                    src='/assets/photo.jpg'
+                    alt='Muhammad Iqbal Ali'
+                    width={240}
+                    height={320}
+                    className='rounded-lg object-cover w-60 h-80 mx-auto'
+                    priority
+                  />
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      {/* Portfolio Section - Hidden for now */}
+      {/* <section id="portfolio" className="container mx-auto px-6 py-16">
+        <div className="max-w-6xl mx-auto">
+          <h3 className="text-3xl font-bold mb-8 text-center">My Work</h3>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[1, 2, 3, 4, 5, 6].map((project) => (
+              <Card key={project} className="group hover:shadow-lg transition-shadow">
+                <CardHeader>
+                  <div className="bg-gradient-to-br from-blue-500 to-purple-600 h-32 rounded-md mb-4"></div>
+                  <CardTitle>Project {project}</CardTitle>
+                  <CardDescription>
+                    A brief description of this amazing project and the technologies used to build it.
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="flex justify-between items-center">
+                    <div className="flex gap-2">
+                      <Badge variant="secondary">React</Badge>
+                      <Badge variant="secondary">API</Badge>
+                    </div>
+                    <div className="flex gap-2">
+                      <Button variant="ghost" size="sm" asChild>
+                        <a href="#" target="_blank">
+                          <Github className="w-4 h-4" />
+                        </a>
+                      </Button>
+                      <Button variant="ghost" size="sm" asChild>
+                        <a href="#" target="_blank">
+                          <ExternalLink className="w-4 h-4" />
+                        </a>
+                      </Button>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section> */}
+
+      {/* Footer */}
+      <footer className='container mx-auto px-6 py-8 border-t'>
+        <div className='text-center text-slate-600 dark:text-slate-300'>
+          <p>&copy; 2025 Muhammad Iqbal Ali</p>
+        </div>
       </footer>
     </div>
   );
