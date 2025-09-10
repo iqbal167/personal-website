@@ -19,12 +19,11 @@ export default function Portfolio() {
             <Button variant='outline' size='sm' asChild>
               <a
                 href={getAssetPath('/assets/resume.pdf')}
-                download='Muhammad_Iqbal_Ali_Resume.pdf'
                 target='_blank'
                 rel='noopener noreferrer'
               >
                 <Download className='w-4 h-4 mr-2' />
-                Download Resume
+                Preview PDF
               </a>
             </Button>
           </div>
