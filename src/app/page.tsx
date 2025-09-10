@@ -167,6 +167,39 @@ export default function Portfolio() {
                 </div>
               </CardContent>
             </Card>
+
+            <Card className='group hover:shadow-lg transition-shadow'>
+              <CardHeader>
+                <div className='bg-gradient-to-br from-green-500 to-blue-600 h-32 rounded-md mb-4 flex items-center justify-center'>
+                  <span className='text-white font-bold text-xl'>Hotline</span>
+                </div>
+                <CardTitle>Hotline Jawa Barat</CardTitle>
+                <CardDescription>
+                  Public service hotline system for West Java Province to handle
+                  citizen complaints and inquiries.
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className='flex justify-between items-center'>
+                  <div className='flex gap-2 flex-wrap'>
+                    <Badge variant='secondary'>Backend</Badge>
+                    <Badge variant='secondary'>API</Badge>
+                    <Badge variant='secondary'>Golang</Badge>
+                  </div>
+                  <div className='flex gap-2'>
+                    <Button variant='ghost' size='sm' asChild>
+                      <a
+                        href='https://hotline.jabarprov.go.id/'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                      >
+                        <ExternalLink className='w-4 h-4' />
+                      </a>
+                    </Button>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
