@@ -1,7 +1,13 @@
 import { Button } from '@/components/ui/button';
-import { Card, CardContent } from '@/components/ui/card';
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Download, Github, Linkedin } from 'lucide-react';
+import { Download, Github, Linkedin, ExternalLink } from 'lucide-react';
 import Image from 'next/image';
 import { getAssetPath } from '@/lib/utils';
 
@@ -15,6 +21,9 @@ export default function Portfolio() {
           <div className='flex gap-4'>
             <Button variant='ghost' size='sm' asChild>
               <a href='#about'>About</a>
+            </Button>
+            <Button variant='ghost' size='sm' asChild>
+              <a href='#portfolio'>Portfolio</a>
             </Button>
             <Button variant='outline' size='sm' asChild>
               <a
@@ -115,45 +124,52 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* Portfolio Section - Hidden for now */}
-      {/* <section id="portfolio" className="container mx-auto px-6 py-16">
-        <div className="max-w-6xl mx-auto">
-          <h3 className="text-3xl font-bold mb-8 text-center">My Work</h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[1, 2, 3, 4, 5, 6].map((project) => (
-              <Card key={project} className="group hover:shadow-lg transition-shadow">
-                <CardHeader>
-                  <div className="bg-gradient-to-br from-blue-500 to-purple-600 h-32 rounded-md mb-4"></div>
-                  <CardTitle>Project {project}</CardTitle>
-                  <CardDescription>
-                    A brief description of this amazing project and the technologies used to build it.
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="flex justify-between items-center">
-                    <div className="flex gap-2">
-                      <Badge variant="secondary">React</Badge>
-                      <Badge variant="secondary">API</Badge>
-                    </div>
-                    <div className="flex gap-2">
-                      <Button variant="ghost" size="sm" asChild>
-                        <a href="#" target="_blank">
-                          <Github className="w-4 h-4" />
-                        </a>
-                      </Button>
-                      <Button variant="ghost" size="sm" asChild>
-                        <a href="#" target="_blank">
-                          <ExternalLink className="w-4 h-4" />
-                        </a>
-                      </Button>
-                    </div>
+      {/* Portfolio Section */}
+      <section id='portfolio' className='container mx-auto px-6 py-16'>
+        <div className='max-w-6xl mx-auto'>
+          <h3 className='text-3xl font-bold mb-8 text-center'>My Work</h3>
+          <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-6'>
+            <Card className='group hover:shadow-lg transition-shadow'>
+              <CardHeader>
+                <div className='bg-white rounded-md mb-4 p-4 flex items-center justify-center h-32'>
+                  <Image
+                    src='https://i0.wp.com/digitalservice.jabarprov.go.id/wp-content/uploads/2023/06/Logo-Sapawarga.png?w=2160'
+                    alt='Sapawarga Logo'
+                    width={120}
+                    height={60}
+                    className='object-contain'
+                  />
+                </div>
+                <CardTitle>Sapawarga</CardTitle>
+                <CardDescription>
+                  Digital platform for West Java Province citizens to access
+                  government services and information.
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className='flex justify-between items-center'>
+                  <div className='flex gap-2 flex-wrap'>
+                    <Badge variant='secondary'>Backend</Badge>
+                    <Badge variant='secondary'>API</Badge>
+                    <Badge variant='secondary'>Golang</Badge>
                   </div>
-                </CardContent>
-              </Card>
-            ))}
+                  <div className='flex gap-2'>
+                    <Button variant='ghost' size='sm' asChild>
+                      <a
+                        href='https://www.jabarprov.go.id/sapawarga'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                      >
+                        <ExternalLink className='w-4 h-4' />
+                      </a>
+                    </Button>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* Footer */}
       <footer className='container mx-auto px-6 py-8 border-t'>
