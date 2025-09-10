@@ -213,8 +213,8 @@ export default function Portfolio() {
                   <Image
                     src='https://dashboard.jabarprov.go.id/assets/images/logo-dark.svg'
                     alt='Executive Jabar AI Logo'
-                    width={120}
-                    height={60}
+                    width={80}
+                    height={40}
                     className='object-contain'
                   />
                 </div>
