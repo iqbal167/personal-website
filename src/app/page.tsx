@@ -1,3 +1,4 @@
+import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import {
   Card,
@@ -6,10 +7,9 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
-import { Download, Github, Linkedin, ExternalLink } from 'lucide-react';
-import Image from 'next/image';
 import { getAssetPath } from '@/lib/utils';
+import { Download, ExternalLink, Github, Linkedin } from 'lucide-react';
+import Image from 'next/image';
 
 export default function Portfolio() {
   return (
@@ -133,7 +133,7 @@ export default function Portfolio() {
               <CardHeader>
                 <div className='bg-white rounded-md mb-4 p-4 flex items-center justify-center h-32'>
                   <Image
-                    src='https://i0.wp.com/digitalservice.jabarprov.go.id/wp-content/uploads/2023/06/Logo-Sapawarga.png?w=2160'
+                    src='https://play-lh.googleusercontent.com/fkozjoEnbIkLaK5WFwFUIBzfJlOoignVZclIMiUz2bCYypT7cD0VYKOlxKDmSkLPqg=w480-h960-rw'
                     alt='Sapawarga Logo'
                     width={120}
                     height={60}
